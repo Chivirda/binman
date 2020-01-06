@@ -2,3 +2,67 @@
     display: grid;
     grid-template-columns: 1fr 17fr;
 }
+
+.content {
+    padding: 0 30px;
+    background: #F2F2F2;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content__head {
+    display: grid;
+    padding: 20px 0;
+}
+
+.head-text {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+    color: #475364;
+    justify-self: start;
+}
+
+.support-text {
+    font-size: 10px;
+    line-height: 12px;  
+    color: #8EA4B5;
+    justify-self: start;
+}
+
+.quantity-text {
+    font-size: 11px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 11px;
+    vertical-align: middle;
+}
+
+.btn-img {
+    margin-right: 6px;
+}
+
+.content__head__btn__wrap {
+    justify-self: end;
+    
+}
+
+.btn-favorites {
+    border: 1px solid #DBE4E7;
+    background: #FFFFFF;
+    color: #475364;
+}
+
+.btn-add-job-seeker {
+    background: #386BF2;
+    color: #FFFFFF;
+}
