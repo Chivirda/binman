@@ -28,6 +28,7 @@
     line-height: 12px;  
     color: #8EA4B5;
     justify-self: start;
+    margin-top: 4px;
 }
 
 .quantity-text {
@@ -113,12 +114,23 @@ td {
     align-items: center;
 }
 
-.phone-img {
+.icon-wrap {
     float: left;
     margin-right: 10px;
+    height: 36px;
+    width: 36px;
+    background-color: #E8EFF1;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
 }
 
-.phone-text {
+.text {
     display: flex;
     flex-direction: column;
+}
+
+.inactive {
+    background: rgba(255, 255, 255, .4);
+    opacity: .4;
 }
