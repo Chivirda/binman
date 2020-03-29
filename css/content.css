@@ -93,6 +93,11 @@ td {
     
 }
 
+strong {
+    display: inline;
+    
+}
+
 .job-seeker-card {
     display: flex;
     align-items: center;
@@ -109,7 +114,7 @@ td {
     margin-right: 10px;
 }
 
-.phone-card {
+.phone-card, .mail-card {
     display: flex;
     align-items: center;
 }
@@ -128,9 +133,43 @@ td {
 .text {
     display: flex;
     flex-direction: column;
+    color: #475364;
+    font-size: 12px;
+    line-height: 14px;
+    vertical-align: middle;
 }
 
 .inactive {
     background: rgba(255, 255, 255, .4);
     opacity: .4;
+}
+
+.rating-4 {
+    color: #ABD02D;
+}
+
+.rating-1 {
+    color: #FF5D00;
+}
+
+.rating-3 {
+    color: #DAE700;
+}
+
+.rating-2 {
+    color: #FFA800;
+}
+
+.rating-5 {
+    color: #67C600;
+}
+
+.rating-wrap {
+    font-size: 13px;
+}
+
+.rating-card {
+    color: #475364;
+    font-size: 12px;
+    line-height: 14px;
 }
