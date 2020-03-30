@@ -90,7 +90,7 @@ tr {
 }
 
 td {
-    padding: 14px 0 14px 20px;
+    padding: 14px 20px 14px 20px;
     
 }
 
@@ -173,4 +173,22 @@ strong {
     color: #475364;
     font-size: 12px;
     line-height: 14px;
+}
+
+.quick-buttons-wrap {
+    display: flex;
+    font-size: 18px;
+    justify-content: space-evenly;
+    color: #475364;
+}
+
+.quick-button {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #DBE4E7;
+    box-sizing: border-box;
+    border-radius: 3px;
 }
