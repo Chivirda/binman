@@ -83,9 +83,17 @@ tr {
     border-radius: 3px;
 }
 
-.content__table__head th {
+.content__table__head th, .content__table--more {
     text-transform: uppercase;
     padding: 14px 0 14px 20px;
+    color: #475364;
+}
+
+.content__table--more {
+    text-align: center;
+}
+
+.content__table__head th {
     text-align: left;
 }
 
