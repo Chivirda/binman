@@ -83,7 +83,7 @@ tr {
     border-radius: 3px;
 }
 
-.content__table__head th, .content__table--more {
+.content__table__head th {
     text-transform: uppercase;
     padding: 14px 0 14px 20px;
     color: #475364;
@@ -91,6 +91,12 @@ tr {
 
 .content__table--more {
     text-align: center;
+}
+
+.content__table--more a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #475364;
 }
 
 .content__table__head th {
@@ -123,7 +129,8 @@ strong {
     margin-right: 10px;
 }
 
-.phone-card, .mail-card {
+.phone-card,
+.mail-card {
     display: flex;
     align-items: center;
 }
@@ -151,6 +158,10 @@ strong {
 .inactive {
     background: rgba(255, 255, 255, .4);
     opacity: .4;
+}
+
+.inactive .icon-wrap {
+    cursor: not-allowed;
 }
 
 .rating-4 {
@@ -199,4 +210,9 @@ strong {
     border: 1px solid #DBE4E7;
     box-sizing: border-box;
     border-radius: 3px;
+}
+
+.quick-button,
+.icon-wrap {
+    cursor: pointer;
 }
