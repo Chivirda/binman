@@ -1,6 +1,6 @@
 .wrap {
-    display: grid;
-    grid-template-columns: 1fr 17fr;
+    display: flex;
+    flex-direction: row;
 }
 
 .content {
@@ -8,6 +8,7 @@
     background: #F2F2F2;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
+    flex-grow: 1;
 }
 
 .content__head {

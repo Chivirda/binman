@@ -42,6 +42,9 @@
     background-color: #000;
     border: none;
     height: 1px;
+}
+
+.modal hr:first-of-type {
     margin: 15px 0;
 }
 
