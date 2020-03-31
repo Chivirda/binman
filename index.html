@@ -44,6 +44,8 @@
                     </a>
                 </div>
             </div>
+
+            <!-- table -->
             <table class="content__table">
                 <thead class="content__table__head">
                     <tr>
@@ -343,6 +345,8 @@
                     </td>
                 </tr>
             </table>
+
+            <!-- modal -->
             <div id="modal" class="modal closed">
                 <div class="modal__close">
                     <i class="fas fa-times"></i>
@@ -350,9 +354,22 @@
                 <form action="#" class="modal__form">
                     <div class="form__heading">Добавление соискателя</div>
                     <hr>
-                    <div class="form__caption">Основные данные</div>
-                    <label for="name" class="form__label">фио</label>
-                    <input type="text" id="name" class="form__input" placeholder="Введите ФИО">
+                    <fieldset>
+                        <div class="form__caption">Основные данные</div>
+                        <label for="name" class="form__label">фио</label>
+                        <input type="text" id="name" class="form__input" placeholder="Введите ФИО">
+                        <label for="vacancy" class="form__label">Вакансия</label>
+                        <select name="vacancy" id="vacancy" class="form__input" required>
+                            <option value="" disabled selected hidden>Выберите вакансию</option>
+                            <option value="1">Full-stack разработчик</option>
+                            <option value="2">Web-дизайнер</option>
+                            <option value="3">Front-end разрабочик</option>
+                        </select>
+                        <label for="photo" class="form__label">Фотография</label>
+                        <span class="support-text">Размер файла вложения не должен превышать 5 Мб, для загрузки допустимы следующие форматы файлов: jpg, png</span>
+                        <input type="file" name="" id="" class="form__input">
+                    </fieldset>
+                    <hr>
                 </form>
             </div>
         </section>

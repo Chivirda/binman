@@ -38,7 +38,8 @@
 
 .modal hr {
     color: #F4F9FB;
-    background-color: #F4F9FB;
+    /* background-color: #F4F9FB; */
+    background-color: #000;
     border: none;
     height: 1px;
     margin: 15px 0;
@@ -53,6 +54,10 @@
 
 .form__heading {
     font-size: 14px;
+}
+
+fieldset {
+    border: none;
 }
 
 .form__caption {
@@ -73,6 +78,7 @@
     border: 1px solid #DCE5EA;
     box-sizing: border-box;
     border-radius: 3px;
+    margin-bottom: 20px;
 }
 
 .form__input::-webkit-input-placeholder {
@@ -83,4 +89,14 @@
 .form__input:-moz-placeholder {
     font-size: 12px;
     color: #8EA4B5;
+}
+
+select:required:invalid {
+    font-size: 12px;
+    color: #8EA4B5;
+}
+
+.modal__form .support-text {
+    display: inline-block;
+    margin-bottom: 8px;
 }
