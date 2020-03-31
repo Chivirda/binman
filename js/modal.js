@@ -5,9 +5,9 @@ const closeModal = document.querySelector('.modal__close')
 
 
 addButton.addEventListener('click', () => {
-    modal.classList.toggle('modal')
+    modal.classList.toggle('closed')
 })
 
 closeModal.addEventListener('click', () => {
-    modal.classList.toggle('modal')
+    modal.classList.toggle('closed')
 })
