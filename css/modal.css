@@ -5,4 +5,25 @@
     top: 70px;
     left: 80px;
     background: rgba(71, 83, 100, 0.8);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal__close {
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    width: 10px;
+    height: 10px;
+    margin-top: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.modal__form {
+    height: 100%;
+    width: 48%;
+    float: right;
+    background-color: #fff;
 }
