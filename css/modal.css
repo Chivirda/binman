@@ -16,7 +16,7 @@
 .modal__close {
     display: flex;
     justify-content: center;
-    background-color: #fff;
+    background-color: #FFFFFF;
     padding: 10px;
     border-radius: 3px;
     width: 10px;
@@ -31,7 +31,7 @@
 .modal__form {
     height: calc(100% - 40px);
     width: 48%;
-    background-color: #fff;
+    background-color: #FFFFFF;
     color: #475364;
     padding: 20px 25px;
 }
@@ -102,4 +102,35 @@ select:required:invalid {
 .modal__form .support-text {
     display: inline-block;
     margin-bottom: 8px;
+}
+
+.form__input::-webkit-file-upload-button {
+    background-color: #386BF2;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: none;
+    padding: 8px 10px;
+}
+
+.form__input::-ms-browse {
+    content: 'Выберите файл';
+    background-color: #386BF2;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: none;
+    padding: 8px 10px;
+}
+
+input[type="file"].form__input {
+    padding: 5px;
 }
