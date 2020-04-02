@@ -353,8 +353,7 @@
                 </div>
                 <form action="#" method="POST" enctype="multipart/form-data" class="modal__form">
                     <div class="form__heading">Добавление соискателя</div>
-                    <hr>
-                    <fieldset>
+                    <div class="form__section">
                         <div class="form__caption">Основные данные</div>
                         <label for="name" class="form__label">фио</label>
                         <input type="text" id="name" class="form__input" placeholder="Введите ФИО">
@@ -367,10 +366,12 @@
                         </select>
                         <label for="photo" class="form__label">Фотография</label>
                         <span class="support-text">Размер файла вложения не должен превышать 5 Мб, для загрузки допустимы следующие форматы файлов: jpg, png</span>
-                        <input type="file" name="photo" id="photo" class="form__input" accept=".jpg, .png">
+                        <label for="photo" class="form__input--file">
+                            <div class="form__input--button">Выберите файл</div>
+                            <div class="form__file-name">Файл не выбран</div>
+                            <input type="file" name="photo" id="photo" accept=".jpg, .png">
                         </label>
-                    </fieldset>
-                    <hr>
+                    </div>
                 </form>
             </div>
         </section>

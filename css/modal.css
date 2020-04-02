@@ -29,11 +29,10 @@
 }
 
 .modal__form {
-    height: calc(100% - 40px);
+    height: 100%;
     width: 48%;
     background-color: #FFFFFF;
     color: #475364;
-    padding: 20px 25px;
 }
 
 .modal hr {
@@ -59,8 +58,14 @@
     font-size: 14px;
 }
 
-fieldset {
-    border: none;
+.form__section {
+    border-top: 1px solid crimson;
+    border-bottom: 1px solid crimson;
+}
+
+.form__heading,
+.form__section {
+    padding: 15px 25px;
 }
 
 .form__caption {
@@ -84,6 +89,10 @@ fieldset {
     margin-bottom: 20px;
 }
 
+.form__section .form__input:last-child {
+    margin-bottom: 0;
+}
+
 .form__input::-webkit-input-placeholder {
     font-size: 12px;
     color: #8EA4B5;
@@ -104,12 +113,22 @@ select:required:invalid {
     margin-bottom: 8px;
 }
 
-.form__input::-webkit-file-upload-button {
+.form__input--file {
+    display: block;
+    width: 100%;
+    padding: 4px;
+    background-color: #F4F9FB;
+    border: 1px solid #DCE5EA;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.form__input--button {
+    display: inline-block;
     background-color: #386BF2;
     color: #FFFFFF;
     font-size: 10px;
     font-style: normal;
-    font-weight: bold;
     text-transform: uppercase;
     border-radius: 3px;
     box-sizing: border-box;
@@ -117,20 +136,13 @@ select:required:invalid {
     padding: 8px 10px;
 }
 
-.form__input::-ms-browse {
-    content: 'Выберите файл';
-    background-color: #386BF2;
-    color: #FFFFFF;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 3px;
-    box-sizing: border-box;
-    border: none;
-    padding: 8px 10px;
+.form__file-name {
+    display: inline-block;
+    font-size: 12px;
+    color: #8EA4B5;
+    margin-left: 10px;
 }
 
-input[type="file"].form__input {
-    padding: 5px;
+input[type="file"] {
+    display: none;
 }
