@@ -7,6 +7,7 @@ const inputPhoto = document.querySelector('#photo')
 
 addButton.addEventListener('click', () => {
     modal.classList.toggle('closed')
+    return false
 })
 
 closeModal.addEventListener('click', () => {
