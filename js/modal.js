@@ -14,6 +14,5 @@ closeModal.addEventListener('click', () => {
 })
 
 inputPhoto.addEventListener('change', () => {
-    console.log(inputPhoto.files[0]);
-    
+    fileName.textContent = inputPhoto.files[0].name
 })
